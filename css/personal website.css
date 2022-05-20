@@ -69,6 +69,10 @@ nav{
 ul li a {
     color: white;
 }
+ul li a:hover{
+    color: black;
+    background-color: crimson;
+}
 /*ul li a:hover{
     color: black;
     background-color: crimson;
@@ -133,7 +137,7 @@ ul li a {
 .home .max-width{
     margin: auto 0 auto 40px;
 }
-.text-1{
+/*.text-1{
     font-size: 27px;
 
 }
@@ -151,11 +155,11 @@ ul li a {
 .text-3 span{
     color: crimson;
     font-weight: 500;
-}
-.navbarar .sticky{
+}*/
+/*.navbarar .sticky{
      background-color:crimson;
      padding: 15px 0;
-}
+}*/
 .menu-btn{
     color: white;
     font-size: 23px;
@@ -178,7 +182,6 @@ i{
 .home .home-content a:hover{
     color: crimson;
     background: none;
-    text-decoration: none;
 }
 .home .home-content a{
     font: size 20px; 
@@ -346,7 +349,6 @@ section .title{
 .about .about-content .right a:hover{
     color: crimson;
     background: none;
-    text-decoration: none;
 }
 
 section .title::before{
@@ -451,12 +453,10 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
-    text-decoration: none;
 }
 .skills .skills-content .left a:hover{
     color: crimson;
     background: none;
-    text-decoration: none;
 }
 
 .skills .skills-content .right .bars{
@@ -483,30 +483,35 @@ section .title::after{
     content: "";
     position: absolute;
     height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills .skills-content .right .lin span{
+    position: absolute;
+    height: 100%;
     width: 80%;
     left: 0;
     top: 0;
     background: crimson;
 }
-.skills .skills-content .right .lin span {
-    position: absolute;
-    height: 100%;
+
+.skills .skills-content .right .lin .java::before{
     width: 90%;
-    left: 0;
-    top: 0;
-    background: crimson;
 }
-/*.skills .skills-content .right .lin .java::before{
+.skills .skills-content .right .lin.html{
     width: 90%;
-}*/
-/*.skills .skills-content .right .lin.html{
-    width: 90%;
+}
+.skills .skills-content .right .lin .css {
+    width: 95%;
 }
 .skills .skills-content .right .lin .html::before{
-    width: 90%;
+    width: 80%;
 }
 .skills .skills-content .right .lin .htm{
-    width: 90%;
+    width: 100%;
+
 }
 .skills .skills-content .right .lint .html{
     width: 90%;
@@ -516,7 +521,10 @@ section .title::after{
 }
 .skills .skills-content .right .lin .css{
     width: 95%;
-}*/
+}
+.skills .skills-content .right .lin.html {
+    width: 100%;
+}
 
 /* teams section styling*/
 .teams .title::after{
@@ -533,11 +541,9 @@ section .title::after{
     border-radius: 6px;
     padding:20px 25px; 
     width: calc(33% - 20px);
-
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     text-align: center;
     transition: all 0.3s ease;
-    
 }
 .teams .car .card:hover{
    background-color: crimson;
@@ -676,7 +682,6 @@ section .title::after{
 button:hover{
     color: crimson;
     background: none;
-    text-decoration: none;
 }
 /*.contact-content .column{
     display: inline-block;
